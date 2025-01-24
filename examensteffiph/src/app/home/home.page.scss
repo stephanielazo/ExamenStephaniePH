@@ -1,0 +1,54 @@
+/* Contenedor principal de cada publicación */
+.publicacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Estilo para la imagen de la publicación */
+.imagen-publicacion {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* Contenedor para el título y la fecha */
+.info-publicacion {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Título de la publicación */
+.info-publicacion h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Contenedor para centrar la fecha horizontalmente */
+.titulo-fecha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Deja espacio entre título y fecha */
+  margin-top: 5px; /* Separa la fecha ligeramente del título */
+}
+
+/* Estilo de la fecha */
+.fecha {
+  font-size: 14px;
+  color: gray;
+  margin-left: auto; /* Empuja la fecha hacia la derecha */
+  margin-right: 10px; /* Da más espacio entre la fecha y el ícono */
+}
+
+/* Estilo para el ícono de eliminar */
+.icono-eliminar {
+  font-size: 20px;
+  color: rgb(0, 17, 255);
+  cursor: pointer;
+}

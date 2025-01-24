@@ -1,0 +1,32 @@
+.image-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+ion-content {
+  --background: #ffffff;
+}
+
+ion-item {
+  --background: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+ion-button {
+  --background: #1e0eaa;
+  --background-hover: #1e0eaa;
+  --color: #fff;
+  border-radius: 5px;
+}
+
+small {
+  font-size: 12px;
+}

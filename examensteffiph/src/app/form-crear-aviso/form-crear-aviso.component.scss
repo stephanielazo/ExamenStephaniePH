@@ -1,0 +1,69 @@
+/* General */
+ion-content {
+    --padding-start: 16px;
+    --padding-end: 16px;
+  }
+  
+  /* Estilo para el encabezado */
+  ion-header {
+    ion-toolbar {
+      --background: #ffffff;
+      --color: #000000;
+  
+      ion-title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  /* Margen general entre elementos */
+  ion-item {
+    margin-bottom: 16px;
+  }
+  
+  /* Botón Fotografía */
+  ion-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    ion-icon {
+      margin-right: 8px;
+    }
+  
+    &.fotografia-btn {
+      --background: #007aff; /* Color principal */
+      --color: #ffffff; /* Texto blanco */
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  
+  /* Imagen capturada */
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Botón Guardar */
+  ion-button[type='submit'] {
+    --background: #28a745; /* Color verde */
+    --color: #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para los mensajes de error */
+  ion-text[color='danger'] {
+    small {
+      font-size: 12px;
+      color: #ff4d4d;
+    }
+  }
+  

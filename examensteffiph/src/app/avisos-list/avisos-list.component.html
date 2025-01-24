@@ -1,0 +1,20 @@
+<ion-content>
+  <div *ngFor="let publicacion of publicaciones" class="publicacion">
+    <img [src]="publicacion.imagen" alt="{{ publicacion.titulo }}" class="imagen-publicacion" />
+    <div class="info-publicacion">
+      <div class="titulo-fecha">
+        <h3>{{ publicacion.titulo }}</h3>
+        <span class="fecha">{{ publicacion.fecha }}</span>
+      </div>
+    </div>
+
+    <ion-icon 
+      name="trash-outline" 
+      class="icono-eliminar" 
+      (click)="eliminarPublicacion(publicacion.id)">
+    </ion-icon>
+  </div>
+
+  <ion-button (click)="agregarPublicacion()">Agregar Publicación</ion-button>
+
+</ion-content>

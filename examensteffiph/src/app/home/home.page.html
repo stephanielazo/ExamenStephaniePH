@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo-centrado">Publicaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let publicacion of publicaciones" class="publicacion">
+    
+    <img [src]="publicacion.imagen" alt="{{ publicacion.titulo }}" class="imagen-publicacion" />
+
+    
+    <div class="info-publicacion">
+      <div class="titulo-fecha">
+        <h3>{{ publicacion.titulo }}</h3>
+        <span class="fecha">{{ publicacion.fecha | fecha }}</span> 
+      </div>
+    </div>
+
+    
+    <ion-icon 
+      name="trash-outline" 
+      class="icono-eliminar" 
+      (click)="abrirModalEliminar(publicacion.id)">
+    </ion-icon>
+  </div>
+
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="'/crear-aviso'">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  
+  <app-confirmacion-eliminar 
+    *ngIf="mostrarModal" 
+    [idPublicacion]="idPublicacionAEliminar" 
+    (confirmarEliminar)="manejarConfirmacionEliminar($event)">
+  </app-confirmacion-eliminar>
+</ion-content>
